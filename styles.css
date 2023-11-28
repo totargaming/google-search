@@ -133,9 +133,23 @@ form {
     display: flex;
     z-index: 3;
     position: relative;
-    min-height: 44px;
+
     background: #202124;
-    width: 638px;
+
+
+}
+
+.searchbox {
+    max-width: 638px;
+    width: calc(100vw - 100px);
+    min-height: 44px;
+}
+
+@media (max-width: 638px) {
+    .searchbox {
+        width: calc(100vw - 100px);
+        /* Small padding for small screens */
+    }
 }
 
 .searchbox:focus,
