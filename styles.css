@@ -109,15 +109,68 @@ a:active {
 }
 
 .search {
-    display: block;
-    box-sizing: border-box;
-    flex-shrink: 0;
-    max-height: 160px;
-    padding: 20px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-. .sub-buttons {
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchbox,
+.submit {
+    padding: 3px 14px;
+    font-size: 16px;
+    border: 1px solid #5f6368;
+    border-radius: 24px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    color: #fff;
+    display: flex;
+    z-index: 3;
+    position: relative;
+    min-height: 44px;
+    background: #202124;
+    width: 638px;
+}
+
+.searchbox:focus,
+.searchbox:active,
+.submit:hover {
+    outline: none;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    background: url("./images/x2.png") no-repeat center center;
+    background-size: contain;
+}
+
+.submit {
+    height: 44px;
+    width: 44px;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.submit img {
+    height: 65%;
+}
+
+
+
+.sub-buttons {
     display: block;
     text-align: -webkit-center;
 }
