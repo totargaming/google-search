@@ -11,6 +11,7 @@ This project is a simple clone of the Google search page. It's built with HTML a
 ## Usage
 
 To use this project, simply clone the repository and open `index.html` in your web browser.
+For demo: https://totargaming.github.io/google-search-clone/
 
 ## Contributing
 
